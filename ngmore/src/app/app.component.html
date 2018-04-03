@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <router-outlet name="head"></router-outlet>
+  <router-outlet name="home"></router-outlet>
+  <router-outlet name="routing"></router-outlet>
+  <router-outlet></router-outlet>
+  <router-outlet name="other"></router-outlet>
+  <p>
+    <button class="button" (click)="showElement()">获取元素</button>
+  </p>
+
+  <div id='d' *ngIf ="show" ele (ele-init)="outElement($event)">
+    <p>测试数据</p>
+  </div>
+</div>
+

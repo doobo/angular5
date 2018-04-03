@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://www.sojson.com",
+    "secure": false,
+    "changeOrigin": true,
+    "ToDo":"secure配置是否要跨域传cookie"
+  }
+}

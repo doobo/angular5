@@ -1,0 +1,11 @@
+<div className="{title}">first-route component works!</div>
+<p><button class="button button-primary" (click)="toBbcRouter()">点击进入辅助路由BBC</button></p>
+<p><a class="button-action" routerLink="link">进入默认outlets的路由</a></p>
+<p><button class="button button-highlight" (click)="toBbRouter()">进入指定outlets的路由</button></p>
+<p><a [routerLink]="[{ outlets: { routing: ['native']}}]">进入指定outlets的路由</a></p>
+<p><button class="button button-highlight" (click)="closeRouting()">清空指定outlets的路由</button></p>
+<p><a [routerLink]="['bbc']">点击进入辅助路由BBC</a></p>
+<p><a routerLink="./abc" routerLinkActive="active">进入辅助ABC路由</a></p>
+<p>This is FirstRoute Default RouterOutlet</p>
+<router-outlet></router-outlet>
+<router-outlet name="mm"></router-outlet>
