@@ -1,4 +1,5 @@
 import { Component,ElementRef  } from '@angular/core';
+import {args} from "./args.enum";
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,8 @@ export class AppComponent {
   show:boolean=true;
   tag:boolean=false;
   constructor(private ref:ElementRef ) {
+    console.log(ref.nativeElement,13);
+    console.log(args[args.eight],args[args.one],14);
   }
 
   //测试方法
