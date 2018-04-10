@@ -23,7 +23,7 @@ export class FetchService {
 
   //代理测试，配置根路径下的proxy.conf.json文件
   getQqMusic(qq: string = '8446666'): any {
-    let url = `/api/qqmusic/${qq}`;
+    let url = `/fetch/qqmusic/${qq}`;
     return this.http.get(url).toPromise()
       .then(result => {
         console.log(result, 29);

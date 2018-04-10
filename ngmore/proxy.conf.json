@@ -3,6 +3,21 @@
     "target": "https://www.sojson.com",
     "secure": false,
     "changeOrigin": true,
-    "ToDo":"secure配置是否要跨域传cookie"
+    "pathRewrite": {
+      "^/api/fetch": "/fetch",
+      "^/api": ""
+    },
+    "logLevel": "debug",
+    "ToDo": "secure配置是否要跨域传cookie"
+  },
+  "/fetch": {
+    "target": "https://www.sojson.com",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/fetch": "/api"
+    },
+    "logLevel": "debug",
+    "ToDo": "secure配置是否要跨域传cookie"
   }
 }

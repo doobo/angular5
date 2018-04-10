@@ -33,7 +33,7 @@ export class FirstRouteComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-      // this.http.getQqMusic();
+       this.http.getQqMusic();
       //this.http.getText('/index.html');
     }
 
