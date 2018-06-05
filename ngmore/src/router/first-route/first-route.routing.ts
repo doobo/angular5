@@ -1,9 +1,9 @@
 import { NgModule }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FirstRouteComponent } from './first-route.component';
-import {BbcComponent} from "./bbc";
-import {HomeComponent} from "../../modules/doobo/home";
-import {ComponentAComponent} from "../../modules/doobo/componentA";
+import {ComponentAComponent} from "../../modules/doobo/componentA/componentA.component";
+import {HomeComponent} from "../../modules/doobo/home/home.component";
+import {BbcComponent} from "./bbc/bbc.component";
 
 const routes: Routes = [
     { path: '',

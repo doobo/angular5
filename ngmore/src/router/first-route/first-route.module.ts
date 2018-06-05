@@ -3,14 +3,17 @@ import { CommonModule }  from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
 import { FirstRouteComponent } from './first-route.component';
 import {FirstRouteRoutingModule} from "./first-route.routing";
-import {DooboModule} from "../../modules";
-import {FetchService,StorageService} from "../../service";
 import {BbcComponent} from "./bbc/bbc.component";
+import {ScrollDirective} from "../../directive/scroll.directive";
+import {DooboModule} from "../../modules/doobo/doobo.module";
+import {FetchService} from "../../service/fetch.service";
+import {StorageService} from "../../service/storage.service";
 
 @NgModule({
     declarations: [
       FirstRouteComponent,
-      BbcComponent
+      BbcComponent,
+      ScrollDirective
     ],
     imports: [
         CommonModule,

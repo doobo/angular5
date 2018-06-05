@@ -5,12 +5,12 @@ import { AppComponent } from './app.component';
 import {BaseRoutingModule} from '../router/base-router.routing';
 import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 import {EmitClickDirective} from "../directive/emitclick.directive";
-import {DooboModule} from "../modules";
 import {CountClicks} from "../directive/countClicks.directive";
 import {DateRange} from "../pipes/dateRange.pipe";
 import {ValuesPipe} from "../pipes/values.pipe";
 import { LinkComponent } from './link/link.component';
 import {ElementDirective} from "../directive/element.directive";
+import {DooboModule} from "../modules/doobo/doobo.module";
 
 @NgModule({
   declarations: [

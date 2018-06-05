@@ -10,8 +10,8 @@ export class AppComponent {
   show:boolean=true;
   tag:boolean=false;
   constructor(private ref:ElementRef ) {
-    console.log(ref.nativeElement,13);
-    console.log(args[args.eight],args[args.one],14);
+    // console.log(ref.nativeElement,13);
+    // console.log(args[args.eight],args[args.one],14);
   }
 
   //测试方法
@@ -21,6 +21,6 @@ export class AppComponent {
 
   //获取页面元素后的回调函数,处理Element
   outElement(ele:any):void{
-    console.log(ele,28);
+    // console.log(ele,28);
   }
 }

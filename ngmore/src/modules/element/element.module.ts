@@ -1,8 +1,8 @@
 import { NgModule }      from '@angular/core';
 import { CommonModule }  from '@angular/common';
 import { ElModule } from 'element-angular';
-import {AcAlertComponent} from "./ac-alert";
 import {MessageService} from "./message.service";
+import {AcAlertComponent} from "./ac-alert/ac-alert.component";
 
 /**
  * Todo:依赖安装使用方式

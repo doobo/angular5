@@ -3,14 +3,13 @@ import { HttpClient,HttpErrorResponse} from '@angular/common/http';
 import 'rxjs/operator/toPromise';
 import { StorageService } from './storage.service';
 import {Router} from "@angular/router";
-import {clearNullAndUndefinedValue} from "../utils";
+import {clearNullAndUndefinedValue} from "../utils/class-util";
 
 
 @Injectable()
 export class AppHttp {
 
   appConfig:any = {apiHost:'api'};
-
   constructor(private http:HttpClient,
               private injector: Injector,
               private storageService:StorageService) {

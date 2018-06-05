@@ -1,11 +1,35 @@
-<div className="{title}">first-route component works!</div>
-<p><button class="button button-primary" (click)="toBbcRouter()">点击进入辅助路由BBC</button></p>
-<p><a class="button-action" routerLink="link">进入默认outlets的路由</a></p>
-<p><button class="button button-highlight" (click)="toBbRouter()">进入指定outlets的路由</button></p>
-<p><a [routerLink]="[{ outlets: { routing: ['native']}}]">进入指定outlets的路由</a></p>
-<p><button class="button button-highlight" (click)="closeRouting()">清空指定outlets的路由</button></p>
-<p><a [routerLink]="['bbc']">点击进入辅助路由BBC</a></p>
-<p><a routerLink="./abc" routerLinkActive="active">进入辅助ABC路由</a></p>
-<p>This is FirstRoute Default RouterOutlet</p>
-<router-outlet></router-outlet>
-<router-outlet name="mm"></router-outlet>
+<div class="container">
+  <div className="{title}">first-route component works!</div>
+  <p>
+    <button class="button button-primary" (click)="toBbcRouter()">点击进入辅助路由BBC</button>
+  </p>
+  <p><a class="button-action" routerLink="link">进入默认outlets的路由</a></p>
+  <p>
+    <button class="button button-highlight" (click)="toBbRouter()">进入指定outlets的路由</button>
+  </p>
+  <p><a [routerLink]="[{ outlets: { routing: ['native']}}]">进入指定outlets的路由</a></p>
+  <p>
+    <button class="button button-highlight" (click)="closeRouting()">清空指定outlets的路由</button>
+  </p>
+  <p><a [routerLink]="['bbc']">点击进入辅助路由BBC</a></p>
+  <p><a routerLink="./abc" routerLinkActive="active">进入辅助ABC路由</a></p>
+  <p>This is FirstRoute Default RouterOutlet</p>
+  <router-outlet></router-outlet>
+  <router-outlet name="mm"></router-outlet>
+  <div so (so-end)="toNext($event)" style="height: 220px;overflow-y: scroll">
+    <p>
+      AngularJS 诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。
+      AngularJS有着诸多特性，最为核心的是:MVW(Model-View-Whatever)、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。
+    </p>
+    <p>
+      AngularJS 是一个 JavaScript框架。它是一个以 JavaScript 编写的库。它可通过script标签添加到HTML 页面。
+      AngularJS 通过 指令 扩展了 HTML，且通过 表达式 绑定数据到 HTML。
+      AngularJS 是以一个 JavaScript 文件形式发布的，可通过 script 标签添加到网页中。
+    </p>
+    <p>
+      AngularJS是为了克服HTML在构建应用上的不足而设计的。
+      HTML是一门很好的为静态文本展示设计的声明式语言，但要构建WEB应用的话它就显得乏力了。
+      所以我做了一些工作(你也可以觉得是小花招)来让浏览器做我想要的事。
+    </p>
+  </div>
+</div>

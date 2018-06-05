@@ -1,9 +1,9 @@
 import { NgModule }      from '@angular/core';
 import { CommonModule }  from '@angular/common';
-import {ComponentAComponent} from "./componentA";
-import {ComponentBComponent} from "./componentB";
-import {HomeComponent} from "./home";
 import {RouterModule} from '@angular/router';
+import {ComponentAComponent} from "./componentA/componentA.component";
+import {ComponentBComponent} from "./componentB/componentB.component";
+import {HomeComponent} from "./home/home.component";
 
 @NgModule({
     imports: [

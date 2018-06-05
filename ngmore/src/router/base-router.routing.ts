@@ -3,7 +3,7 @@ import { Routes, RouterModule,PreloadAllModules } from '@angular/router';
 import {PreloadStrategyProvider} from './preloadStrategyProvider';
 //import {CanLoadProvider} from "./canLoadProvider";
 import {LinkComponent} from "../app/link/link.component";
-import {ComponentBComponent} from "../modules/doobo/componentB";
+import {ComponentBComponent} from "../modules/doobo/componentB/componentB.component";
 
 const routes: Routes = [
   { path:'',

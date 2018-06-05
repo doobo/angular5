@@ -2,7 +2,7 @@ import { NgModule }      from '@angular/core';
 import { CommonModule }  from '@angular/common';
 import { ElementUnitRouting } from './element-unit.routing';
 import { ElementUnitComponent } from './element-unit.component';
-import {ElementModule} from "../../modules";
+import {ElementModule} from "../../modules/element/element.module";
 
 @NgModule({
     imports: [

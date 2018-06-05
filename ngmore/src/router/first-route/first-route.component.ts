@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {FetchService} from "../../service";
 import {Observable} from 'rxjs/Observable';
+import {FetchService} from "../../service/fetch.service";
 
 @Component({
     selector: 'first-route',
@@ -33,8 +33,12 @@ export class FirstRouteComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-       this.http.getQqMusic();
+       // this.http.getQqMusic();
       //this.http.getText('/index.html');
+    }
+
+    toNext(event){
+      console.log(event,41);
     }
 
     ngOnDestroy() {
