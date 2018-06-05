@@ -1,0 +1,27 @@
+/*
+*/*.iml
+node_modules/*
+plugins/*
+.sourcemaps/*
+/router/dist/*
+*/.idea/
+*/.sourcemaps/
+*/.sass-cache/
+*/.tmp/
+*/.versions/
+*/tmp/
+*/temp/
+*/hooks/
+*/platforms/
+*/plugins/
+*/plugins/android.json
+*/plugins/ios.json
+$RECYCLE.BIN/
+!/iomore
+!/ngmore
+!/postcss
+!/router
+!/tabs
+ftx-app/.DS_Store iomore/.DS_Store jcob-worldcup-h5/.DS_Store
+.DS_Store
+!.gitignore
